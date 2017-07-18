@@ -1,0 +1,237 @@
+/*General*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+header,
+.footer-cont {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a,
+button {
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+a:hover {
+  color: #19a2de !important;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+small {
+  display: block;
+  font-size: 12px;
+  color: #5b5b5b;
+}
+
+a:visited,
+a:active,
+a:focus {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+button:focus {
+  color: #fff !important;
+}
+
+button:hover {
+  background-color: #3abaf2;
+  color: #fff !important;
+}
+
+.horizontal-list li {
+  display: inline;
+}
+
+/*Header*/
+
+header .row {
+  height: 60px;
+}
+
+header .row h1 {
+  margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+header .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+  margin-top: 25px;
+}
+
+header .options .wrap {
+  text-align: right;
+  margin-left: auto;
+}
+
+.header-left {
+  text-align: right;
+}
+
+.header-right {
+  text-align: left;
+}
+
+header .options li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header .options a {
+  color: #19a2de;
+  font-size: 12px;
+}
+
+header .options small {
+  display: inline;
+}
+
+footer .options p {
+  color: #19b7e4;
+}
+
+.login {
+  background-image: url('https://d2t3ff60b2tol4.cloudfront.net/c/j/fzny4z/googlelogin.png');
+  padding-left: 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+.split {
+  display: inline-block;
+}
+
+/*footer*/
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: black;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .options-container .options {
+  width: 85px;
+  margin-left: auto;
+}
+
+.social-media {
+  text-align: center;
+  cursor: pointer;
+}
+
+.social-media li {
+  margin-right: 20px;
+}
+
+hr {
+  border-top: 1px solid #c9c9c9;
+}
+
+.call-to-action small {
+  margin-top: 10px;
+}
+
+/* Sticky footer */
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+  max-width: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -230px;
+}
+
+footer, .push {
+  height:230px;
+}
+
+/* mobile/small screen */
+
+@media screen and (max-width: 767px) {
+  footer, .page-wrap:after {
+    height: auto;
+  }
+
+  .page-wrap {
+    min-height: 0;
+    margin-bottom: 0;
+  }
+
+  footer .options-container .options {
+    margin: 0 auto !important;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  .portrait {
+    text-align: center !important;
+  }
+
+  .information-container {
+    margin: 0 auto;
+  }
+
+  header .logo {
+    text-align: center;
+  }
+
+  header .options ul {
+    text-align: center;
+  }
+
+  header .options {
+    text-align: center;
+    height: 57px;
+    margin-top: 5px;
+  }
+
+  header .options .wrap {
+    margin-left: 0;
+    text-align: center;
+  }
+}
