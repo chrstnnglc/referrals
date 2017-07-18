@@ -165,19 +165,28 @@
     width: 50px;
   }
 
-  a.btn {
-    color: #fff;
+  .try {
+    height: 50%;
+    width: 100%;
   }
 
-  a.btn:hover {
+  .try:link, .try:visited {
     color: #fff;
+    border: 0px;
   }
+
+  .try:hover {
+    color: #fff !important;
+    text-decoration: none;
+    opacity: .9;
+    border: 0px;
+  }
+
 </style>
 
 <!-- 
-  EDIT HERE GIRL 
+  EDITED HERE
 -->
-
 <div class="row referral-intro">
   <p class="you-referred">You were referred by sampleuser@insynchq.com! You get $5 off. That's pretty neat!</p>
 
@@ -187,9 +196,7 @@
 
     <p class="talk">Insync extends Drive's web functionality to your desktop by integrating tightly with Windows, Mac and Linux so you can get work done.</p>
 
-    <form action="https://www.insynchq.com/why">
-      <button type="submit" class="btn">Learn more!</button>
-    </form>
+    <p><a href="https://www.insynchq.com/why">Learn more!</a></p>
   </div>
 
   <div class="col-sm-4 text-center">
@@ -197,10 +204,7 @@
     <h3>Take Insync for a free spin!</h3>
 
     <p class="talk">Head over to our downloads page for a FREE trial.</p>
-    <br><br><br>
-    <form action="https://www.insynchq.com/downloads">
-      <button type="submit" class="btn">Try it now!</button>
-    </form>
+    <a href="https://www.insynchq.com/downloads" class="btn btn-info try" role="button">Try it now!</a>
   </div>
 
   <div class="col-sm-4 text-center">
