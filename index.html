@@ -123,7 +123,8 @@
 </div>
 <div class="container-fluid content">
   
-    <style type="text/css">
+<style type="text/css">
+
   .referral-intro {
     width: 100%;
     max-width: 900px;
@@ -136,10 +137,6 @@
     margin-right: auto;
   }
 
-  .referral-intro h3 {
-    text-align: center;
-  }
-
   .referral-intro ul {
     list-style: disc;
   }
@@ -147,7 +144,9 @@
   .referral-intro .talk {
     margin: 25px auto 50px;
     width: 100%;
-    max-width: 700px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 20px;
   }
 
   .you-referred {
@@ -165,21 +164,74 @@
     width: 55px;
   }
 
+  .buy-off {
+    text-align: center;
+    color: #fff;
+    width: 200px;
+    background-color: #19b7e4;
+    line-height: 30px;
+    display: block;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 1px #19b7e4 solid;
+  }
+
+  .buy-off:link, .buy-off:visited {
+    color: #fff;
+    background-color: #19b7e4;
+    border: 1px #19b7e4 solid;
+  }
+
+  .buy-off:hover {
+    color: #fff !important;
+    opacity: .8;
+    text-decoration: none;
+    border: 1px #19b7e4 solid;
+  }
+
   .try {
-    height: 50%;
-    width: 100%;
+    text-align: center;
+    display: inline-block;
+    color: #19b7e4;
+    width: 200px;
+    background-color: #fff;
+    border: 1px #19b7e4 solid;
+    line-height: 30px;
+    vertical-align: middle;
+    border-radius: 10px;
   }
 
   .try:link, .try:visited {
-    color: #fff;
-    border: 0px;
+    color: #19b7e4;
   }
 
   .try:hover {
-    color: #fff !important;
+    background-color: #fff !important;
     text-decoration: none;
-    opacity: .9;
-    border: 0px;
+  }
+
+  .cancel {
+    display: block;
+    text-align: center;
+  }
+
+  .credit-card {
+    text-align: center;
+    font-style: italic;
+    line-height: 0px;
+  }
+
+  h3, h4 {
+    text-align: center;
+  }
+
+  .currency {
+    margin-top: 30px;
+  }
+
+  .away {
+    line-height: 20px;
+    text-align: center;
   }
 
 </style>
@@ -188,26 +240,35 @@
   EDITED HERE
 -->
 <div class="row referral-intro">
-  <p class="you-referred">You were referred by sampleuser@insynchq.com! You get $5 off. That's pretty neat!</p>
+  
+  <h4 class="you-referred">You were referred by sampleuser@insynchq.com! You get $5 off. That's pretty neat!</h4>
 
-  <div class="col-sm-4">
+  <div class="row">
     <img class="centered" src="./files/header_icon.png">
-    <h3>Insync is the most powerful Google Drive client ever built!</h3>
+    <h3>The most powerful Google Drive client ever built!</h3>
 
-    <p class="talk">Insync extends Drive's web functionality to your desktop by integrating tightly with Windows, Mac and Linux so you can get work done.</p>
-
-    <p align="center"><a href="https://www.insynchq.com/why">Tell me more!</a></p>
+    <h5 class="talk">Insync extends Drive's web functionality to your desktop by integrating tightly with Windows, Mac, and Linux so you can get work done.
+    <br><br>
+    <a href="https://www.insynchq.com/why">Learn more -></a>
+    </h5>
   </div>
 
-  <div class="col-sm-4">
-    <img class="centered test-drive" src="./files/support_1.png">
-    <h3>Take Insync for a free spin!</h3>
+  <div class="row">
+    <div class="col-sm-6">
+      <a href="https://www.insynchq.com/buy" class="btn btn-info buy-off" role="button">Buy now with $5 off</a>
+    </div>
 
-    <p class="talk">There are a lot of reasons to love Insync, but sometimes the proof is in the pudding. Head over to our downloads page for a FREE trial.</p>
-    <a href="https://www.insynchq.com/downloads" class="btn btn-info try" role="button">Try it now!</a>
+    <div class="col-sm-3">
+      <a href="https://www.insynchq.com/downloads" class="btn btn-info try" role="button">Get a free 15-day trial</a>
+      <h6 class="credit-card">No credit card required!</h6>
+    </div>
   </div>
 
-  <div class="col-sm-4">
+  <div class="row">
+    <h5 class="away">(Don't fret, you still get $5 off even if you navigate away from this page.)</h5>
+  </div>
+
+  <div class="row currency">
     <img class="centered resize" src="./files/ic_attach_money_black_24dp.png">
     <h3>Want to buy in bulk or in a different currency?</h3>
 
@@ -221,9 +282,9 @@
       <strong>BRL,</strong>
       <strong>JPY.</strong>
       However, for referrals we only accept <strong>USD</strong>. You may cancel this referral and you'll be able to select other currencies.
+      <br><br>
+      <a href="https://www.insynchq.com/referrals/cancel" class="cancel">Cancel this referral</a>
     </p>
-
-    <p align="center"><a href="https://www.insynchq.com/referrals/cancel">Cancel this referral</a></p>
   </div>
 </div>
   
